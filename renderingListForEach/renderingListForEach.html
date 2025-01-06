@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Rendering List through For Each"></lightning-card>
+    <ul class="slds-m-around_medium"> 
+       
+<template for:each={contacts} for:item="contact">  <!--contact is a variable receiving data from the contacts list -->
+    <li key= {contact.Id}>
+        {contact.Name},{contact.Title}
+    </li>
+</template>
+       
+
+
+
+    </ul>
+</template>
